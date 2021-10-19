@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>dom3</title>
+    
+    
+    </head>
+    <body>
+    firstname :<input type="text" id="first" onkeyup="getValue()">  <br>
+        password:<input type="password" id ="pass" onkeyup="getValue()"><br>
+        Check the  interested languages:<input type="checkbox" name="course" value="java" id="java">java
+        <input type="checkbox" name="course" value="c++" id="c++">c++
+        <input type="checkbox" name="course" value="C" id="c">c
+        <button onclick="getValue()">click</button>
+        <select id ="cities" onchange="getValue()">
+        <option value="mira road">mira road</option>
+             <option value="borivali">borivali</option>
+             <option value="mira ">mira </option>
+        
+        </select>
+        
+        <script>
+        function getValue(){
+            
+            let node=document.getElementById("first");
+            let fname=node.value;
+            console.log(fname);
+            let node1=document.getElementById("pass").value ;
+            let arr=document.getElementsByName("course");
+            console.log(arr);
+            for( let item of arr){
+                console.log(item.checked);
+                if(item.checked){
+                    console.log(item.value);
+                    
+                    
+                    
+                }
+            }
+            let city=document.getElementById("cities").value;
+                    console.log(city);
+            
+        }
+        
+        </script>
+    
+    </body>
+
+
+</html>

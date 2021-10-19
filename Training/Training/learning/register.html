@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginstyle.css">
+    </head>
+<body>
+   
+    <center>
+
+
+<div class="container">
+    <br>
+    
+    <h3>Register Please :)</h3><br>
+  <form name="myform" method="post" action="success1.html" onsubmit="return validateform()"  novalidate>  
+    <div class="row">
+      <div class="col-25">
+        <img src="../images/user.png">
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." >
+      </div>
+    
+    <div class="row">
+      <div class="col-25">
+        <img src="../images/password.png">
+      </div>
+      <div class="col-75">
+        <input type="password" id="lname" name="lastname" placeholder="Your password.."  ><br>
+        
+      </div>
+    </div>
+        
+     <div class="row">
+      <div class="col-25">
+        <img src="../images/eye.png" height="20px" width="20px">
+      </div>
+      <div class="col-75">
+      <input type="checkbox" onclick="myFunction()"> Show Password
+      </div>
+    </div>
+       
+      
+       <div class="row">
+      <div class="col-25">
+        <img src="../images/email.png">
+      </div>
+      <div class="col-75">
+        <input type="email" id="email" name="email" placeholder="Your email.."  >
+      </div>
+    </div>
+    
+   
+    <div class="row"><br>
+        
+      <input type="submit" value="Submit"><br>
+        <input type="button" value="Already Registered" onclick="login()" id="myButton">
+        <input type="button" value="Go To Home Page" onclick="home()" id="Button">
+       
+    </div>
+        <br>
+        
+    <img src="../images/fb2.png">
+        <img src="../images/tt2.png">
+        <img src="../images/insta2.png"><br>
+        
+        <h3>OR</h3>
+         <a href="https://accounts.google.com/servicelogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin"> <img src="../images/google.png"></a>
+      </div>
+  </form>
+</div>
+    </center>
+   
+ <script>
+    document.getElementById("myButton").onclick = function () {
+        location.href = "login.html";
+    };
+      document.getElementById("Button").onclick = function () {
+        location.href = "home.html";
+    };
+    function validateform(){  
+var name=document.myform.fname.value;  
+var password=document.myform.lname.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  } 
+        var x=document.myform.email.value;  
+var atposition=x.indexOf("@");  
+var dotposition=x.lastIndexOf(".");  
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+  alert("Please enter a valid e-mail address");  
+  return false;  
+  }  
+} 
+     function myFunction() {
+  var x = document.getElementById("lname");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+    
+
+
+</script>
+
+</body>
+</html>

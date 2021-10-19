@@ -1,0 +1,160 @@
+<html>
+<head>
+    <title>form</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        input:hover{
+            border: 3px solid blue;
+            margin: 8px;
+            box-sizing: border-box;
+            background-color:antiquewhite;
+            font-size: 20px;
+            
+            
+            
+            
+        }
+        
+        form{
+            color: cadetblue;
+            font-size: 20px;
+            font-family: cursive;
+            font-style: italic;
+        }
+        h1:hover{
+            
+            color:darkorange;
+            font-family:serifs;
+            font-size: 30px;
+        }
+        
+       
+    
+    </style>
+    
+    </head>
+<body>
+    <h1>PLEASE FILL THE FORM :)</h1>
+    <form onsubmit=" return validate1()" novalidate>
+        FirstName :<input type="text" id="first" onblur="Validate()"><br>
+        <span id=error1></span>
+        phone number:<input type="text" id="mobile" onblur="Validate()"><br>
+        <span id=error4></span>
+         <span id=error5></span>
+         password :<input type="password" id="pass" onblur="Validate()"><br>
+        <span id=error2></span>
+       
+          Confirmpassword :<input type="password" id="cpass" onblur="Validate()">
+        <span id=error3></span><br>
+        show password<input type="checkbox" id="check" onchange="Validate2()"><br>
+               <input type="submit" value="submit" id="sub"  > Click the button to submit :)    
+        
+        
+    
+    
+    </form>
+    <script>
+function Validate(){
+    
+    document.getElementById("error1").innerHTML="";
+                            
+    let fname=document.getElementById("first").value;
+    if(fname==""){
+        document.getElementById("error1").innerHTML="required field";
+        return false;
+    }
+    return true;
+    
+    
+    
+    
+    var regexp=new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{5,8})");
+
+    document.getElementById("error2").innerHTML="";
+                            
+    let ffname=document.getElementById("pass").value;
+    console.log(fname);
+    if(ffname==""){
+        document.getElementById("error2").innerHTML="required field";
+        return false;
+    if(regexp.test(ffname)!=true)
+   {
+       console.log(regexp.test(ffname));
+        document.getElementById("error2").innerHTML="password should match pattern";
+       
+       
+       
+   }
+       
+        
+    }
+   return true;
+    
+    
+    
+    
+    document.getElementById("error3").innerHTML="";
+                            
+    let name=document.getElementById("cpass").value;
+    if(name=="")
+        document.getElementById("error3").innerHTML="required field";
+    return false;
+    if(name!=ffname){
+        document.getElementById("error3").innerHTML="password should match";
+       
+    }
+    return true;
+    
+    
+    document.getElementById("error4").innerHTML="";
+    document.getElementById("error5").innerHTML="";
+     let mobile=document.getElementById("mobile").value;
+    if(mobile=="")
+         document.getElementById("error4").innerHTML="required field";
+    return false;
+    if(isNaN(mobile)){
+        document.getElementById("error5").innerHTML="only digits";
+        return false;
+    }
+    if(mobile!=10){
+         document.getElementById("error4").innerHTML="only  10 digits";
+        return false;
+        
+    }
+    return true;
+}
+        
+        function Validate2(){
+            
+           let check= document.getElementById("check");
+            if(check.checked){
+                document.getElementById("pass").type="text";
+                document.getElementById("cpass").type="text";
+            }
+            
+        }
+        
+      
+        function validate1(){
+            
+            let state1=Validate();
+            
+            let state3=validate();
+            if(state1  && state3){
+                return true;
+            
+            }
+            return false;
+                    
+            
+            
+        }
+        
+    </script>
+    
+    </body>
+
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    
+        button{
+            
+            font-size: 20px;
+            height: 70px;
+            width: 100px;
+            background-color: cadetblue;
+            margin: 10px;
+            border: 5px solid black;
+            
+        }
+        input{
+            border: 5px solid blue;
+            background-color: aqua;
+        }
+    </style>
+<script src="Library/jquery-3.6.0.js"></script>
+   
+<script>
+    $(document).ready(function(){
+let childNode= $("bdy").children();
+        console.log(childNode);
+        $('#btn').click(function(){
+            
+        let innerhtml=$('#para').html();
+            $('#para2').html(innerhtml);
+            
+            let innerhtml1=$('#para3').text();
+            $('para4').html(innerhtml);
+        });
+        
+        $('#fname').blur(function(){
+            let firstname=$('#fname').val();
+            console.log(firstname);
+            $('#fname1').val(firstname);
+        });
+        $('#btn2').click(function(){
+            
+            $("#para").css({'background-color':'blue', 'color': 'white', 'font-size': '30px', 'transition-delay':'5s'});
+        })
+    });
+    </script>
+
+    </head>
+    
+    <body id="bdy">
+    <section>
+         <h2><center>MS DHONI</center></h2>
+        <center><img src="dhoni3.jpg"></center>
+       
+        <p>Dhoni made his ODI debut on 23 December 2004 against Bangladesh, and played his first Test a year later against Sri Lanka. He has been the recipient of many awards, including the ICC ODI Player of the Year award in 2008 and 2009 (the first player to win the award twice), the Rajiv Gandhi Khel Ratna award in 2007, the Padma Shri, India's fourth highest civilian honour, in 2009 and the Padma Bhushan, India's third highest civilian honour, in 2018.[7] Dhoni was named as the captain of the ICC World Test XI in 2009, 2010 and 2013. He has also been selected a record 8 times in ICC World ODI XI teams, 5 times as captain. The Indian Territorial Army conferred the honorary rank of Lieutenant Colonel[8] to Dhoni on 1 November 2011. He is the second Indian cricketer after Kapil Dev to receive this honour</p>
+        <button id="btn">edit</button><br>
+        
+        </section>
+        <section>
+            <button id="btn2">inner</button>
+        <p id="para">Dhoni made his ODI debut on 23 December 2004 against Bangladesh, and played his first Test a year later against Sri Lanka. He has been the recipient of many awards, including the ICC ODI Player of the Year award in 2008 and 2009 (the first player to win the award twice), the Rajiv Gandhi Khel Ratna award in 2007, the Padma Shri, India's fourth highest civilian honour, in 2009 and the Padma Bhushan, India's third highest civilian honour, in 2018.[7] Dhoni was named as the captain of the ICC World Test XI in 2009, 2010 and 2013. He has also been selected a record 8 times in ICC World ODI XI teams, 5 times as captain. The Indian Territorial Army conferred the honorary rank of Lieutenant Colonel[8] to Dhoni on 1 November 2011. He is the second Indian cricketer after Kapil Dev to receive this honour</p>
+            <p id="para2">
+            
+           </p>
+            <p id="para3">
+          </p>
+            <p id="para4">
+            
+           
+            
+            </p>
+            
+          enter here:  <input type="text" id ="fname">
+             paste here: <input type="text" id="fname1">
+        
+        </section>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>dom</title>
+    </head>
+    <body id="bdy">
+    <div>
+        <h3> hot drinks</h3>
+        <ol class="order">
+        
+        <li>tea</li>
+            <li> coffee</li>
+            <li>green tea</li>
+        </ol>
+        </div>
+         <div>
+        <h3> cold drinks</h3>
+        <ol class="order">
+        
+        <li>pepsi</li>
+            <li> mirinda</li>
+            <li>sprit</li>
+        </ol>
+        </div>
+         <p id="para">
+            
+            hello...welcome to  neosoft
+                <b>india is my country</b>
+            </p>
+       
+        <button onclick="showChilds()">show body elements</button>
+        <button onclick="test1()">list items</button>
+         <button onclick="test2()">list items</button>
+         <button onclick="showContents()">list items</button>
+        
+        <script>
+        
+         function showChilds(){
+           let node= document.getElementById("bdy");
+            
+            let array=node.childNodes;
+            console.log(array);
+        }
+            function test1(){
+                
+                let array= document.getElementsByTagName("li");
+                console.log(array);
+            }
+            function test2(){
+                let array = document.getElementsByClassName("order");
+                console.log(array);
+            }
+             function showContents(){
+                let node = document.getElementById("para");
+                 let text=node.innerHTML;
+                console.log(text);
+            }
+        </script>
+    </body>
+
+</html>

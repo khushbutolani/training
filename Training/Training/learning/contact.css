@@ -1,0 +1,134 @@
+.con{
+    font-size: 25px;
+    font-family: cursive;
+    text-decoration: underline;
+    
+    
+    
+}
+.help{
+    font-size: 30px;
+    font-family: sans-serif;
+    
+}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=email]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: cadetblue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:cadetblue;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.footer{
+    position: absolute;
+    right: 150px;
+    width: 200px;
+  height: 120px;
+     top:900px;
+    margin-right: 300px;
+    
+}
+.footer1{
+    position: absolute;
+    right: 150px;
+    width: 200px;
+  height: 120px;
+    margin-top: 50px;
+    top:950px;
+     margin-right: 300px;
+    
+}
+.footer2{
+    position: absolute;
+    right: 150px;
+    width: 200px;
+  height: 120px;
+    margin-top: 70px;
+    top:1000px;
+     margin-right: 300px;
+    
+}
+.footer3{
+    position: absolute;
+    right: 150px;
+    width: 200px;
+  height: 120px;
+    margin-top: 70px;
+    top:900px;
+    
+}
+.footer4{
+    position: absolute;
+    right: 150px;
+    width: 200px;
+  height: 120px;
+    margin-top: 70px;
+    top:950px;
+    height: 60px;
+    width: 60px;
+    margin-right: 150px;
+    padding-top: 30px;
+    
+}
+.footer5{
+    position: absolute;
+    right: 150px;
+    width: 200px;
+  height: 120px;
+    margin-top: 70px;
+    top:950px;
+    height: 60px;
+    width: 60px;
+    margin-right: 50px;
+    padding-top: 30px;
+    
+}
+.footer6{
+    position: absolute;
+    right: 100px;
+    
+   float: right;
+    display: inline-block;
+   
+  height: 120px;
+    margin-top: 70px;
+    top: 950px;
+    height: 60px;
+    width: 60px;
+       padding-top: 30px;
+
+
+}

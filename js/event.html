@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>event</title>
+    </head>
+        <body>
+    <button onclick="openDialog()">Finish</button>
+    <button onmouseover="openDialog()" onmouseout="finish()">Finish</button>
+        <div>
+        enter the name :<input type="text" onkeydown="func()" onkeyup="func1()">
+        </div>
+           
+       
+                            <script>
+            function openDialog(){
+                confirm("do you really want to exit");
+            }
+            function finish(){
+                alert("do you really want to exit");
+                
+            }
+            function func(){
+                console.log("key pressed");
+            }
+             function func1(){
+                 console.log("key released");
+             }
+        </script>
+    
+    </body>
+
+</html>

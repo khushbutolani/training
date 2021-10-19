@@ -1,0 +1,12 @@
+p{
+    font-size: 20px;
+    color: cadetblue;
+    
+}
+#mybtn{
+    height: 50px;
+    width: 150px;
+    background-color: cadetblue;
+    color: white;
+    font-size: 20px;
+}

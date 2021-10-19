@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="library/jquery-3.6.0.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+    $("#im").animate({
+      height: "500px",
+      width: "500px",
+        border: "5px solid black",
+        margin: "10px"
+    }, {
+      duration: 5000,
+      easing: "linear",
+      complete: function(){
+      $(this).after("<br>completed");
+      }
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<button id="btn">Animate</button>
+
+<div id="box">
+   
+    <img src="dhoni3.jpg" id="im" height="300px" width="300px" margin="5px">
+    </div>
+
+</body>
+</html>

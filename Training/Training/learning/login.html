@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginstyle.css">
+    </head>
+<body>
+   
+    <center>
+
+
+<div class="container">
+    <br>
+    
+    <h3>Login</h3><br>
+   
+  <form name="myForm" action="success.html" onsubmit="return validateForm()">
+      
+    <div class="row">
+      <div class="col-25">
+        <img src="../images/user.png">
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+           <span id=error1></span>
+      </div>
+    
+    <div class="row">
+      <div class="col-25">
+        <img src="../images/password.png">
+      </div>
+      <div class="col-75">
+        <input type="password" id="lname" name="lastname" placeholder="Your password.." required>
+         
+      </div>
+    </div>
+      
+       <div class="row">
+      <div class="col-25">
+        <img src="../images/email.png">
+      </div>
+      <div class="col-75">
+        <input type="email" id="email" name="email" placeholder="Your email.." required>
+      </div>
+    </div>
+    
+   
+    <div class="row"><br>
+        
+      <input type="submit" value="Submit"><br>
+        <input type="button" value="Register" onclick="register()" id="myButton">
+         <input type="button" value="Go To HomePage" onclick="home()" id="Button">
+        
+       
+    </div>
+        <br>
+        
+    <img src="../images/fb2.png">
+        <img src="../images/tt2.png">
+        <img src="../images/insta2.png"><br><br>
+        
+        <h3>OR</h3><br>
+        <a href="https://accounts.google.com/servicelogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin"> <img src="../images/google.png"></a>
+      </div>
+  </form>
+</div>
+    </center>
+    <script>
+        function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+            let y = document.forms["myForm"]["lname"].value;
+  if (x == "") {
+    alert("password must be filled out");
+    return false;
+  }
+}
+    document.getElementById("myButton").onclick = function () {
+        location.href = "register.html";
+    };
+         document.getElementById("Button").onclick = function () {
+        location.href = "home.html";
+    };
+        
+        var input = document.getElementById("lname");
+
+
+input.addEventListener("keyup", function(event) {
+
+  
+  if (event.getModifierState("CapsLock")) {
+     alert("Warning!! CapsLock is on");
+  } else {
+    text.style.display = "none"
+  }
+});
+       
+</script>
+   
+           
+
+</body>
+</html>

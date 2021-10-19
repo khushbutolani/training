@@ -1,0 +1,42 @@
+
+<html>
+
+<head>
+    <script>
+    let student={
+rollNo:123,
+name: 'pooja',  
+percent: 89.0,
+changeName(jag){
+        this.name=jag;
+    },
+        
+        getPer(){
+            return this.percent;
+        }
+        
+        showRoll: (rn)=>console.log(rollNo);
+
+
+
+}
+    
+    
+    console.log(student.name);
+        console.log(JSON.stringify(student));
+        console.log(student.rollNo);
+        console.log(JSON.stringify(student));
+        student.changeName("jag");
+        let per=student.getPer();
+        console.log(per);
+        student.showRoll(student.rollNo);
+    </script>
+    
+    
+    
+    </head>
+
+
+</html>
+
+

@@ -1,0 +1,37 @@
+div{
+    
+    font-size: 20px;
+    color: burlywood;
+    font-family: cursive;
+    
+    
+}
+.h1{
+    font-size: 40px;
+    color: coral;
+    font-family: monospace;
+    
+    
+}
+#h2{
+    
+    font-size: 20px;
+    color: darkblue;
+    font-family: sans-serif;
+    text-decoration: underline;
+    
+}
+.head{
+    font: 30px;
+    font-family: cursive;
+    text-decoration: underline;
+    background-color: antiquewhite;
+    height: 50px;
+    text-align: center;
+}
+.main{
+    height: 80px;
+    background-color: burlywood;
+    
+    
+}

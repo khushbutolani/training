@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>dom</title>
+    </head>
+    <body id="bdy">
+    <div>
+        <h3> hot drinks</h3>
+        <ol class="order" id="hotdrinks">
+        
+        <li>tea</li>
+            <li> coffee</li>
+            <li>green tea</li>
+        </ol>
+        </div>
+         <div>
+        <h3> cold drinks</h3>
+        <ol class="order" id="col">
+        
+        <li>pepsi</li>
+            <li> mirinda</li>
+            <li>sprit</li>
+        </ol>
+        </div>
+          <img src="download%20(1).jpg" height="200" width="100" id="nature">
+        <p>Good</p>
+        <button onclick="clickMe()">Click Me</button>
+        <button onclick="newItem()"> new item</button>
+        <button onclick="changeStyle()">style</button>
+        <button onclick="changeH()">changehw</button>
+      
+       
+             <script>
+             function newItem(){
+                  var node=document.getElementById("col");
+                 var child=document.createElement("li");
+                 child.innerHTML="fanta";
+                 node.appendChild(child);
+                 
+             }
+             function clickMe(){
+                 var bod=document.getElementById("bdy");
+                 var chi=document.createElement("p");
+                 chi.innerHTML="Morning";
+                 bod.appendChild(chi);
+                 
+             }
+             var parent=document.createElement("select");
+              let cities=["mira road","borivali","bandra"]
+        for(var i=0;i<cities.length;i++){
+            
+            let ele= document.createElement("option");
+            ele.innerHTML=cities[i];
+            ele.value=cities[i];
+            parent.appendChild(ele);
+            
+        }
+             document.getElementById("bdy").appendChild(parent);
+             
+             function changeStyle(){
+                 let ele=document.getElementById("hotdrinks");
+                 ele.style.backgroundColor="yellow";
+                 ele.style.color="blue";
+                 ele.style.fontSize="20px";
+                 ele.style.border= "5px solid blue";
+                 
+                /*    ele.setAttribute("style","color:red;font-size:20px;border:2px solid red");*/
+                 
+             }
+             function changeH(){
+                let ele=document.getElementById("nature");
+                 ele.height="300";
+                 ele.width="300";
+                 ele.setAttribute=("id","img1");
+              ele.src=("download.jpg");
+                 ele.style.border="5px solid blue";
+                
+            
+                 
+             }
+             let arr= document.getElementsByTagName("h3");
+             for(let item of arr){
+                 item.style.color="blue";
+             }
+             
+    
+    </script>
+    </body>
+   
+</html>

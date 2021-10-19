@@ -1,0 +1,130 @@
+h1{
+    color:cadetblue;
+    margin-left: 600px;
+    
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+h1 {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.active{
+    background-color: burlywood;
+}
+.checked{
+    color: cadetblue;
+}
+.card:hover{
+    
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.footer{
+    position: absolute;
+    right: 150px;
+    width: 200px;
+  height: 120px;
+     top:1150px;
+    margin-right: 300px;
+    
+}
+.footer1{
+    position: absolute;
+    right: 150px;
+    width: 200px;
+  height: 120px;
+    margin-top: 50px;
+    top:1200px;
+     margin-right: 300px;
+    
+}
+.footer2{
+    position: absolute;
+    right: 150px;
+    width: 200px;
+  height: 120px;
+    margin-top: 70px;
+    top:1250px;
+     margin-right: 300px;
+    
+}
+.footer3{
+    position: absolute;
+    right: 150px;
+    width: 200px;
+  height: 120px;
+    margin-top: 70px;
+    top:1100px;
+    
+}
+.footer4{
+    position: absolute;
+    right: 150px;
+    width: 200px;
+  height: 120px;
+    margin-top: 70px;
+    top:1150px;
+    height: 50px;
+    width: 50px;
+    margin-right: 150px;
+    padding-top: 30px;
+    
+}
+.footer5{
+    position: absolute;
+    right: 150px;
+    width: 200px;
+  height: 120px;
+    margin-top: 70px;
+    top:1150px;
+    height: 50px;
+    width: 50px;
+    margin-right: 50px;
+    padding-top: 30px;
+    
+}
+.footer6{
+    position: absolute;
+    right: 100px;
+    
+   float: right;
+    display: inline-block;
+   
+  height: 120px;
+    margin-top: 70px;
+    top: 1150px;
+    height: 50px;
+    width: 50px;
+       padding-top: 30px;
+
+
+}

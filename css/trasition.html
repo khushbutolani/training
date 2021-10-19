@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <title> basic tags</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Html 4 basic tags">
+     <meta name="keywords" content="html,body,p,b,i,span">
+     <meta name="author" content="khushbu">
+     <meta name="description" content="Html 4 basic tags">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        .box{
+            
+            height: 100px;
+            width: 100px;
+            background-color: lightpink;
+            margin: 10px;
+            border: 2px solid blue;
+            
+            
+        }
+        #b1:hover{
+            height: 200px;
+            width: 300px;
+            transition-property: width height;
+            transition-duration: 10s;
+               transition: all 5s 3s ease-in 3s;
+            
+            
+        }
+        #b2:hover{
+            height: 200px;
+            width: 300px;
+            background-color: darkblue;
+            transition-property: width,height,background-color, border;
+            transition-duration: 10s;
+            border: 4px dashed pink;
+            transition-delay: 5s;
+         
+            
+            
+        }
+    </style>
+    </head>
+    <body>
+        <div class="box" id="b1">
+            WELCOME
+        </div>
+        <div class="box" id="b2">
+            TO NEOSOFT
+        </div>
+    
+    </body>
+</html>

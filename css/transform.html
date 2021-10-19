@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+    <title> basic tags</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Html 4 basic tags">
+     <meta name="keywords" content="html,body,p,b,i,span">
+     <meta name="author" content="khushbu">
+     <meta name="description" content="Html 4 basic tags">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        .block{
+            width: 200px;
+            height: 150px;
+            background-color: cyan;
+            border: 3px solid blue;
+            margin: 50px;
+            
+        }
+        #d1:hover{
+            transform: translateX(100px);
+            transition:transform : translateX(100px);
+        
+            
+        }
+        #d2:hover{
+            transform: translate3d(100px,200px,100px)
+             translateZ(100px);/
+         
+            
+        }
+         #d3:hover{
+            transform: translate(100px,200px);/* both X and Y */
+         
+            
+        }
+        #d4:hover{
+            transform: skewX(100deg);
+        }
+         #d5:hover{
+            transform: skewY(45deg);
+        }
+         #d6:hover{
+            transform: skew(45deg,30deg);
+        }
+    </style>
+    <script>
+        function myFun(){
+             var node=document.getElementById("d3");
+            node.style.transform="translate(100px,200px)";
+            
+        }
+    
+    </script>
+    </head>
+    <body>
+        <button onclick="myFun()"> Change position</button>
+        <div class="block" id="d1">
+            India is my country
+        
+        
+        </div>
+          <div class="block" id="d2">
+            India is my country##
+        
+        
+        </div><br>
+          <div class="block" id="d3">
+            India is my country
+        
+        
+        </div>
+        <div class="block" id="d4">
+            India is my country
+        
+        </div>
+          <div class="block" id="d5">
+            India is my country
+        
+        </div>
+          <div class="block" id="d6">
+            India is my country
+        
+        </div>
+    </body>
+</html>
+    

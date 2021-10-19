@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <style>
+        body{
+            background-color:deepskyblue;
+        }
+        button{
+            
+            height: 50px;
+            width: 100px;
+            background-color:burlywood;
+            margin: 10px;
+        }
+    </style>
+    <script src="Library/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            
+            $('#img1').mouseover(function(){
+                let h=$('#img1').attr("height");
+                let w=$('#img1').attr('width');
+                $('#img2').attr({'height':h,'width':w});
+                alert("height is "+h+"width is "+w);
+            });
+        });
+    
+    
+    </script>
+    
+</head>
+<body>
+    <button id="btn">get attribute</button><br>
+    <img src="dhone1.jpg" height="400" width="500" id="img1" margin="5px">
+    <br>
+    <img src="dhoni2.jpg" id="img2">
+    
+    
+    
+    </body>
+
+</html>
